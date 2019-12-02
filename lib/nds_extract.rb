@@ -15,7 +15,7 @@ def directors_totals(nds)
   row_index = 0
   while row_index < directors_database.count do
     name = directors_database[row_index][:name]
-    total
+    total[name] = 0 
     element_index = 0 
     while element_index < directors_database[row_index].count do
       total += directors_database[row_index][element_index]

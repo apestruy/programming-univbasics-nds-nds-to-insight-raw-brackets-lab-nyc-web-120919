@@ -12,11 +12,17 @@ def directors_totals(nds)
   
   results = {}
   total = 0 
-  counter = 0
-  while count < directors_database.count do
-    name = directors_database[counter][:name]
+  row_index = 0
+  while row_index < directors_database.count do
+    name = directors_database[row_index][:name]
+    total
     element_index = 0 
-    while element_index < directors_database[counter].count do
+    while element_index < directors_database[row_index].count do
+      total += directors_database[row_index][element_index]
+      element_index += 1 
+    end 
+  row_index += 1  
+end 
       results = {
   
   

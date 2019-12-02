@@ -17,8 +17,8 @@ def directors_totals(nds)
     name = directors_database[row_index][:name]
     total[name] = 0 
     element_index = 0 
-    while element_index < directors_database[row_index].count do
-      total += directors_database[row_index][element_index]
+    while element_index < directors_database[row_index][:movies].count do
+      total[name] += directors_database[row_index][:movies][element_index][:worldwide_gross]
       element_index += 1 
     end 
   row_index += 1  

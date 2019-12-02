@@ -10,7 +10,6 @@ def directors_totals(nds)
   # and total up all the
   # Be sure to return the result at the end!
   
-  results = {}
   total = 0 
   row_index = 0
   while row_index < directors_database.count do

@@ -11,11 +11,12 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   
   results = {}
-  count = 0
+  total = 0 
+  counter = 0
   while count < directors_database.count do
-    name = directors_database[count][:name]
+    name = directors_database[counter][:name]
     element_index = 0 
-    while element_index < directors_database[row_index].count do
+    while element_index < directors_database[counter].count do
       results = {
   
   

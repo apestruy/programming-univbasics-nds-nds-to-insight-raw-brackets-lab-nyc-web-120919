@@ -9,6 +9,13 @@ def directors_totals(nds)
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
   # Be sure to return the result at the end!
-  hash1 = {}
+  
+  results = {}
+  row_index = 0
+  while row_index < directors_database.count do
+    element_index = 0 
+    while element_index < directors_database[row_index].count do
+      results << 
+  
   
 end

@@ -10,10 +10,11 @@ def directors_totals(nds)
   # and total up all the
   # Be sure to return the result at the end!
   
+  result = {}
   total = 0 
   row_index = 0
-  while row_index < directors_database.count do
-    name = directors_database[row_index][:name]
+  while row_index < nds.count do
+    name = nds[row_index][:name]
     total[name] = 0 
     element_index = 0 
     while element_index < directors_database[row_index][:movies].count do

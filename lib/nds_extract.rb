@@ -11,17 +11,16 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   
   result = {}
-  total = 0 
   row_index = 0
   while row_index < nds.count do
     name = nds[row_index][:name]
-    total[name] = 0 
+    result[name] = 0 
     element_index = 0 
     while element_index < nds[row_index][:movies].count do
-      total[name] += nds[row_index][:movies][element_index][:worldwide_gross]
+      result[name] += nds[row_index][:movies][element_index][:worldwide_gross]
       element_index += 1 
     end 
   row_index += 1  
 end 
-total
+result
 end
